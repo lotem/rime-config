@@ -1,0 +1,14 @@
+patch:
+  schema_list/+:
+    - schema: combo_pinyin
+    - schema: sancang
+    - schema: sancang_simp
+
+  key_binder/bindings:
+    __patch:
+      - key_bindings:/emacs_editing
+      - key_bindings:/move_by_word_with_tab
+      - key_bindings:/paging_with_minus_equal
+      - key_bindings:/paging_with_comma_period
+      - key_bindings:/numbered_mode_switch
+      - key_bindings:/optimized_mode_switch

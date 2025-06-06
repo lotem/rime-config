@@ -16,3 +16,5 @@ patch:
       - key_bindings:/paging_with_comma_period
       - key_bindings:/numbered_mode_switch
       - key_bindings:/optimized_mode_switch
+
+  menu/page_size: 3

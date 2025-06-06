@@ -1,21 +1,24 @@
 patch:
+  #style/color_scheme: aqua
+  #style/color_scheme: lost_temple
   #style/color_scheme: psionics
   style/color_scheme: retro_green
+  #style/color_scheme: retro_orange
   preset_color_schemes/retro_green/corner_radius:
+  preset_color_schemes/retro_orange/corner_radius:
   style/font_face: 'LXGW WenKai'
-  #style/font_face: 'Maple Mono NF CN'
-  style/font_point: 24
-  style/corner_radius: 24
   style/candidate_format: '%c %@'
   style/candidate_list_layout: stacked # linear
   style/inline_preedit: true
+  app_options:
 
 __patch:
     #- dual_themes
     #- vertical_text
-    - big_foot
+    #- big_foot
     #- large_text
     #- ultra_large_text
+    - large_pixel
 
 dual_themes:
   patch/+:
@@ -57,3 +60,14 @@ ultra_large_text:
     style/spacing: 32
     style/line_spacing: 32
     #style/base_offset: 30
+
+large_pixel:
+  patch/+:
+    style/font_face: 'Fusion Pixel 12px Proportional zh_hant'
+    style/font_point: 72
+    style/label_font_point: 64
+    style/comment_font_point: 64
+    style/corner_radius: 36
+    style/spacing: 36
+    style/line_spacing: 36
+    #style/base_offset: 24

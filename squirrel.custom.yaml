@@ -2,7 +2,7 @@ patch:
   #style/color_scheme: aqua
   #style/color_scheme: lost_temple
   #style/color_scheme: psionics
-  style/color_scheme: retro_green
+  #style/color_scheme: retro_green
   #style/color_scheme: retro_orange
   preset_color_schemes/retro_green/corner_radius:
   preset_color_schemes/retro_orange/corner_radius:
@@ -10,15 +10,16 @@ patch:
   style/candidate_format: '%c %@'
   style/candidate_list_layout: stacked # linear
   style/inline_preedit: true
+  style/inline_candidate: true
   app_options:
 
 __patch:
-    #- dual_themes
+    - dual_themes
     #- vertical_text
-    #- big_foot
+    - big_foot
     #- large_text
     #- ultra_large_text
-    - large_pixel
+    #- large_pixel
 
 dual_themes:
   patch/+:

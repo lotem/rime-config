@@ -15,9 +15,9 @@ patch:
 
 __patch:
     - dual_themes
-    - vertical_text
-    #- big_foot
-    - large_text
+    #- vertical_text
+    - big_foot
+    #- large_text
     #- ultra_large_text
     #- large_pixel
 

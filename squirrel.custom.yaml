@@ -11,7 +11,7 @@ patch:
   style/candidate_list_layout: stacked # linear
   style/inline_preedit: true
   style/inline_candidate: true
-  app_options:
+  #app_options:
 
 __patch:
     - dual_themes

@@ -1,12 +1,11 @@
 patch:
-  #style/color_scheme: aqua
-  #style/color_scheme: lost_temple
   #style/color_scheme: psionics
+  #style/color_scheme: starcraft
   #style/color_scheme: retro_green
   #style/color_scheme: retro_orange
   preset_color_schemes/retro_green/corner_radius:
   preset_color_schemes/retro_orange/corner_radius:
-  style/font_face: 'LXGW Bright'
+  style/font_face: 'LXGW WenKai'
   style/candidate_format: '%c %@'
   style/candidate_list_layout: stacked # linear
   style/inline_preedit: true
@@ -23,11 +22,12 @@ __patch:
 
 dual_themes:
   patch/+:
-    style/color_scheme: purity_of_essence # aqua #
-    style/color_scheme_dark: purity_of_form # solarized_rock #
+    style/color_scheme: aqua # purity_of_essence #
+    style/color_scheme_dark: lost_temple # purity_of_form #
 
 vertical_text:
   patch/+:
+    style/font_face: 'LXGW Bright'
     style/candidate_list_layout: stacked # linear #
     style/text_orientation: vertical # horizontal #
     style/base_offset: 6

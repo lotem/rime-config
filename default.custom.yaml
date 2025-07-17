@@ -1,6 +1,7 @@
 patch:
   schema_list/+:
     - schema: combo_pinyin
+    - schema: combo_pinyin_with_tones
     - schema: sancang
     - schema: sancang_simp
     - schema: cangjie5_express

@@ -1,6 +1,6 @@
 patch:
   __patch:
-    - combo_pinyin_layouts:/use_pc_layout_with_briefs
+    - combo_pinyin_layouts:/use_pc_layout
     #- combo_pinyin_layouts:/use_alpha28_layout
     #- combo_pinyin_layouts:/use_return_to_commit_raw_input
     - combo_pinyin_layouts:/use_return_to_confirm

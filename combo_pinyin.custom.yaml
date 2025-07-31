@@ -5,7 +5,51 @@ patch:
     #- combo_pinyin_layouts:/use_return_to_commit_raw_input
     - combo_pinyin_layouts:/use_return_to_confirm
 
-  #menu/page_size: 9
   menu/alternative_select_labels: [ 〡 , 〢 , 〣 , 〤 , 〥 , 〦 , 〧 , 〨 , 〩, 〸 ]
   punctuator/import_preset: symbols
   recognizer/patterns/punct: '^/([0-9]0?|[A-Za-z]+)$'
+
+# 並擊過程中顯示並擊碼，並擊完成時轉換成拼音
+display_combo_code:
+  chord_composer:
+    __include: combo_pinyin_layouts:/default_layout_config
+    output_format: []
+  __patch:
+    - chord_composer/output_format/+: { __include: 'combo_pinyin_briefs:/briefs?' }
+    - chord_composer/output_format/+: { __include: combo_pinyin_layouts:/default_layout_initial_rules }
+    - chord_composer/output_format/+: { __include: combo_pinyin_layouts:/rime_rules }
+    - chord_composer/output_format/+: { __include: combo_pinyin_layouts:/validate_syllable }
+
+unit_prompt:
+  chord_composer/prompt_format:
+    - 'xform/^.*$/※/'
+
+initial_prompt:
+  chord_composer/prompt_format:
+    - 'xform/^d.*$/東/'
+    - 'xform/^f.*$/風/'
+    - 'xform/^p.*$/破/'
+    - 'xform/^z[aeiou].*$/早/'
+    - 'xform/^m.*$/梅/'
+    - 'xform/^[hx].*$/向/'
+    - 'xform/^n.*$/暖/'
+    - 'xform/^y?[aoeiu].*$/一/'
+    - 'xform/^zh.*$/枝/'
+    - 'xform/^[kq].*$/開/'
+    - 'xform/^b.*$/氷/'
+    - 'xform/^s[aeiou].*$/雪/'
+    - 'xform/^w.*$/無/'
+    - 'xform/^r.*$/人/'
+    - 'xform/^[gj].*$/見/'
+    - 'xform/^ch.*$/春/'
+    - 'xform/^c.*$/從/'
+    - 'xform/^t.*$/天/'
+    - 'xform/^sh.*$/上/'
+    - 'xform/^l.*$/來/'
+    - 'xform/^[a-z].*$/※/'
+
+zhuyin_prompt:
+  chord_composer/prompt_format:
+    __include: bopomofo.schema:/reverse_lookup/comment_format
+    __append:
+      - "xform/'//"

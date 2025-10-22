@@ -22,5 +22,12 @@ patch:
       - key_bindings:/paging_with_comma_period
       - key_bindings:/numbered_mode_switch
       - key_bindings:/optimized_mode_switch
+      - __append:
+          - { when: always, accept: Control+5, select: terra_pinyin }
+          - { when: always, accept: Control+6, select: luna_pinyin }
+          - { when: always, accept: Control+7, select: bopomofo }
+          - { when: always, accept: Control+8, select: stone }
+          - { when: always, accept: Control+9, select: stenotype }
+          - { when: always, accept: Control+0, select: combo_pinyin }
 
   menu/page_size: 3

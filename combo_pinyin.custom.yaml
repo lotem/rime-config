@@ -4,6 +4,7 @@ patch:
     #- combo_pinyin_layouts:/use_alpha28_layout
     #- combo_pinyin_layouts:/use_return_to_commit_raw_input
     - combo_pinyin_layouts:/use_return_to_confirm
+    - chord_composer/finish_chord_on_first_key_release: true
 
   menu/alternative_select_labels: [ 〡 , 〢 , 〣 , 〤 , 〥 , 〦 , 〧 , 〨 , 〩, 〸 ]
   punctuator/import_preset: symbols
@@ -19,6 +20,10 @@ display_combo_code:
     - chord_composer/output_format/+: { __include: combo_pinyin_layouts:/default_layout_initial_rules }
     - chord_composer/output_format/+: { __include: combo_pinyin_layouts:/rime_rules }
     - chord_composer/output_format/+: { __include: combo_pinyin_layouts:/validate_syllable }
+
+nil_prompt:
+  chord_composer/prompt_format:
+    - 'xform/^.*$//'
 
 unit_prompt:
   chord_composer/prompt_format:

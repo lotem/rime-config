@@ -53,11 +53,11 @@ large_text:
 ultra_large_text:
   patch/+:
     style/font_point: 96
-    style/label_font_point: 60
-    style/comment_font_point: 60
-    style/corner_radius: 64
-    style/spacing: 32
-    style/line_spacing: 32
+    style/label_font_point: 80
+    style/comment_font_point: 80
+    style/corner_radius: 80
+    style/spacing: 40
+    style/line_spacing: 40
     #style/base_offset: 30
 
 large_pixel:

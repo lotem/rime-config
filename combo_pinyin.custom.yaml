@@ -14,7 +14,7 @@ patch:
   punctuator/symbols/+:
     '/kg': '　'
   key_binder/bindings/+:
-    - { when: always, accept: Shift+space, send_sequence: '/kg ' }
+    - { when: always, accept: Shift+space, send_sequence: '/kg {Release+space}' }
 
 
 # 並擊過程中顯示並擊碼，並擊完成時轉換成拼音

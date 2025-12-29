@@ -7,7 +7,7 @@ patch:
   style/candidate_format: '%c %@'
   style/candidate_list_layout: stacked # linear
   style/inline_preedit: true
-  style/inline_candidate: true
+  style/inline_candidate: false
   app_options:
 
 __patch:

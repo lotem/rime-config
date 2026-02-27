@@ -62,7 +62,7 @@ ultra_large_text:
 
 large_pixel:
   patch/+:
-    style/font_face: 'Fusion Pixel 12px Proportional zh_hant'
+    style/font_face: 'Fusion Pixel 12px Prop zh_hant'
     style/font_point: 72
     style/label_font_point: 64
     style/comment_font_point: 64

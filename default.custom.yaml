@@ -6,15 +6,16 @@ patch:
     - schema: detenele
     - schema: combo_jyutping
 
-  #ascii_composer/switch_key/+:
-  #  Alt_L: set_ascii_mode
-  #  Alt_R: unset_ascii_mode
+  ascii_composer/switch_key/+:
+    Shift_L: set_ascii_mode
+    Shift_R: unset_ascii_mode
 
   key_binder/bindings:
     __patch:
       - key_bindings:/emacs_editing
       - key_bindings:/paging_with_minus_equal
+      #- key_bindings:/paging_with_comma_period
       - key_bindings:/numbered_mode_switch
-      - key_bindings:/optimized_mode_switch
+      #- key_bindings:/optimized_mode_switch
 
   menu/page_size: 3

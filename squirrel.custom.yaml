@@ -11,7 +11,8 @@ patch:
   app_options:
 
 __patch:
-    - dual_themes
+    #- dual_themes
+    - dual_themes_starcraft
     #- vertical_text
     - big_foot
     #- large_text
@@ -20,8 +21,13 @@ __patch:
 
 dual_themes:
   patch/+:
-    style/color_scheme: aqua # purity_of_essence #
-    style/color_scheme_dark: lost_temple # purity_of_form #
+    style/color_scheme: aqua
+    style/color_scheme_dark: lost_temple
+
+dual_themes_starcraft:
+  patch/+:
+    style/color_scheme: purity_of_essence
+    style/color_scheme_dark: purity_of_form
 
 vertical_text:
   patch/+:

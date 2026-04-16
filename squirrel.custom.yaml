@@ -1,5 +1,5 @@
 patch:
-  #style/color_scheme: psionics
+  style/color_scheme: psionics
   #style/color_scheme: starcraft
   #style/color_scheme: retro_green
   #style/color_scheme: retro_orange
@@ -12,7 +12,7 @@ patch:
 
 __patch:
     #- dual_themes
-    - dual_themes_starcraft
+    #- dual_themes_starcraft
     #- vertical_text
     - big_foot
     #- large_text

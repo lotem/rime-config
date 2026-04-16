@@ -1,6 +1,8 @@
 patch:
   schema_list/+:
     - schema: combo_pinyin
+    - schema: combo_pinyin_tonal_chords
+    - schema: cangjie5_express
     - schema: sancang
     - schema: sancang_simp
     - schema: detenele

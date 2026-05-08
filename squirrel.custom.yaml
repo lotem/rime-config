@@ -14,10 +14,11 @@ __patch:
     #- dual_themes
     #- dual_themes_starcraft
     #- vertical_text
-    - big_foot
+    #- big_foot
     #- large_text
     #- ultra_large_text
     #- large_pixel
+    - full_screen
 
 dual_themes:
   patch/+:
@@ -76,3 +77,13 @@ large_pixel:
     style/spacing: 36
     style/line_spacing: 36
     #style/base_offset: 24
+
+full_screen:
+  patch/+:
+    style/font_point: 200
+    style/label_font_point: 180
+    style/comment_font_point: 180
+    style/corner_radius: 180
+    style/spacing: 80
+    style/line_spacing: 80
+    #style/base_offset: 60

@@ -1,7 +1,0 @@
----
-name: "cangjie5_char"
-version: "1.0"
-sort: by_weight
-import_tables:
-  - cangjie5
-...
